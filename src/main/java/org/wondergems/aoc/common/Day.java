@@ -1,4 +1,4 @@
-package nl.WonderGem.aoc.common;
+package org.wondergems.aoc.common;
 
 import java.util.List;
 
