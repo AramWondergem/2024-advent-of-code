@@ -72,19 +72,19 @@ public class Day03 implements Day<Integer> {
         return matcher.results().mapToInt(result -> Integer.parseInt(result.group(1)) * Integer.parseInt(result.group(2))).sum();
     }
 
-    public Integer part2Refined(List<String> input) {
-        StringBuilder sb = new StringBuilder();
-        for(String s : input ){
-            sb.append(s);
-        }
-
-        String total = sb.toString();
-
-        Pattern pattern = Pattern.compile("mul\\(([0-9]{1,3}),([0-9]{1,3})\\) | do\\(\\) | don't\\(\\)");
-        Matcher matcher = pattern.matcher(total);
-
-        //loop over matchings
-    }
+//    public Integer part2Refined(List<String> input) {
+//        StringBuilder sb = new StringBuilder();
+//        for(String s : input ){
+//            sb.append(s);
+//        }
+//
+//        String total = sb.toString();
+//
+//        Pattern pattern = Pattern.compile("mul\\(([0-9]{1,3}),([0-9]{1,3})\\) | do\\(\\) | don't\\(\\)");
+//        Matcher matcher = pattern.matcher(total);
+//
+//        //loop over matchings
+//    }
 
     private int checkSum(int i, String s) {
         int endIndex = Math.min(i + 12, s.length());
